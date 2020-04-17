@@ -74,14 +74,14 @@
     &-title{
         margin-bottom: 10px;
         font-size: 48px;
-        font-weight: 700;
+        @include f700;
         line-height: 72px;
     }
     &-text{
         margin-bottom: 50px;
         font-size: 20px;
         line-height: 30px;
-        font-weight: 500;
+        @include f500;
     }
     &-form{
         max-width: 670px;
@@ -96,11 +96,11 @@
             height: 56px;
             border: none;
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
             padding-left: 25px;
             padding-right: 60px;
             &::placeholder{
-                font-weight: 500;
+                @include f500;
             }
         }
         button{
@@ -170,7 +170,7 @@
     }
     &-title{
         color:$bg;
-        font-weight: 500;
+        @include f500;
         font-size: 18px;
         display: block;
     }
@@ -181,7 +181,7 @@
     }
     &-price{
         font-size: 20px;
-        font-weight: 700;
+        @include f700;
         color: $bg  ;
     }
     &-info{
@@ -205,7 +205,7 @@
         }
         span{
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
         }
     }
     &-star{
@@ -269,3 +269,59 @@
 }
 
 //end product-slider
+
+// start advantages
+.advantages{
+    background-color: #263238;
+    padding: 110px 0px;
+    &__title{
+        color: #fff;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+    &__item{
+        max-width: 370px;
+        text-align: center;
+        margin: 0px 15px;
+        
+        &-images{
+            height: 114px;
+            width: 114px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            transition: all 0.5s;
+            &:hover{
+                svg path{
+                    fill: #fff;
+                }
+                background-color: $green;
+            }
+        }
+        &-title{
+            @include f500;
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 30px;
+
+        }
+        &-text{
+            text-align: center;
+            font-size: 15px;
+            color: #fff;
+            padding:0px 15px;
+        }
+    }
+}
+
+
+// end advantages   
+
