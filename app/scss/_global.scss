@@ -122,3 +122,16 @@ li{
 .page-content{
     background-color: $grey;
 }
+
+.angle-right{
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        font-family: 'icomoon';
+        content: '\f105';
+        color: $green;
+        position: absolute;
+        left: 0;
+        font-size: 14px;
+    }
+}
