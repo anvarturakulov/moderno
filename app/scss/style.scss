@@ -4,6 +4,9 @@
 
 
 // start header 
+.header{
+    background: #fff;
+}
 .header__top-inner{
     display: flex;
     justify-content: space-between;
@@ -126,13 +129,14 @@
 }
 
 .basket{
+    margin-right: 20px;
     span{
         background-color: $green;
     }
 }
 
 .user{
-    margin-left: 20px;
+    
     margin-right: 20px;
     padding-right: 25px;
     position: relative;
@@ -199,6 +203,7 @@
     transition: all .3s;
     height: 0px;
     overflow: hidden;
+    z-index: 1;
     li + li {
         padding-top: 15px;
     }
@@ -235,6 +240,7 @@
         transition: all .3s;
         height: 0px;
         overflow: hidden;
+        z-index: 1;
     }
     &__item{
         display: flex;
@@ -319,6 +325,7 @@
         }
     }
     &__menu{
+        z-index: 1;
         border: 1px solid #d5d5d5;
         border-top: none;
         position: absolute;
@@ -729,7 +736,7 @@
 
 // start footer
 .footer{
-    padding-top: 110px;
+    padding-top: 50px;
     //padding:110px 0px 95px;
     color:#b7c3c8;
     background-color: $bg;
@@ -1233,3 +1240,39 @@
     font-size: 12px;
     position: absolute;
 }
+
+.btn-block{
+    position: relative;
+}
+
+.btn-scroll{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: tomato;
+    border: 1px solid #fff;
+    top: 100px;
+    right: 100px;
+    
+    z-index: 10;
+    
+}
+
+.menu__btn{
+    display: none;
+    
+}
+
+.header__btn-menu{
+    display: none;
+    
+}
+
+
+
+
+
+
+// end 
+
+@import 'media';
