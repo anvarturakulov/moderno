@@ -215,6 +215,26 @@
                     </div>
                 </div>
             </header>
+
+
+            <section class="search page-search" style="background-image: url(images/search-bg.jpg);">
+                <div class="container">
+                    <div class="search__inner">
+                        <div class="search__inner-text">
+                            Premium WordPress Themes, Web Templates and Many More...
+                        </div>
+                        <div class="search__inner-form">
+                            <form>
+                                <input type="text" placeholder="Search Your Keywords..." required>
+                                <button type="submit">
+                                    <img src="images/icons/search.svg" alt="">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
             <div class="breadcrumbs">
                 <div class="container">
                     <div class="breadcrumbs__inner">
@@ -252,15 +272,15 @@
                             <div class="one__content-tabs">
                                 <!-- Tab links -->
                                 <div class="tab">
-                                    <button class="tablinks active" onclick="openCity(event, 'features')">Item Features</button>
-                                    <button class="tablinks" onclick="openCity(event, 'comments')">Comments</button>
-                                    <button class="tablinks" onclick="openCity(event, 'reviews')">Reviews</button>
-                                    <button class="tablinks" onclick="openCity(event, 'support')">Support</button>
+                                    <button class="tablinks active" onclick="openTab(event, 'features')">Item Features</button>
+                                    <button class="tablinks" onclick="openTab(event, 'comments')">Comments</button>
+                                    <button class="tablinks" onclick="openTab(event, 'reviews')">Reviews</button>
+                                    <button class="tablinks" onclick="openTab(event, 'support')">Support</button>
                                 </div>
                                 
                                 <!-- Tab content -->
                                 <div id="features" class="tabcontent">
-                                    <div class="features__content">
+                                    <div class="tab__item">
                                         <ul>
                                             <li>Printing and typesetting industry</li>
                                             <li>Bhen an unknown printe</li>
@@ -277,7 +297,7 @@
                                 </div>
                                 
                                 <div id="comments" class="tabcontent">
-                                    <div class="comments__content">
+                                    <div class="tab__item">
                                         <ul>
                                             <li>Printing and typesetting industry</li>
                                             <li>Bhen an unknown printe</li>
@@ -287,7 +307,7 @@
                                 </div>
                                 
                                 <div id="reviews" class="tabcontent">
-                                    <div class="reviews__content">
+                                    <div class="tab__item">
                                         <ul>
                                             <li>Printing and typesetting industry</li>
                                             <li>Bhen an unknown printe</li>
@@ -299,7 +319,7 @@
                                 </div>
                                 
                                 <div id="support" class="tabcontent">
-                                    <div class="support__content">
+                                    <div class="tab__item">
                                         <ul>
                                             <li>Printing and typesetting industry</li>
                                             <li>Bhen an unknown printe</li>

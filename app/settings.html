@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moderno</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -217,6 +216,7 @@
                 </div>
             </header>
 
+
             <section class="search page-search" style="background-image: url(images/search-bg.jpg);">
                 <div class="container">
                     <div class="search__inner">
@@ -240,33 +240,100 @@
                     <div class="breadcrumbs__inner">
                         <ul class="breadcrumbs__list">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">404 Page</a></li>
+                            <li><a href="#">Settings</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="page404">
+            <div class="settings">
                 <div class="container">
-                    <div class="page404__caption">
-                        <div class="page404__caption-text">Error Page</div>
-                    </div>
-                    <div class="page404__content">
-                        
-                        <div class="page404__content-title">404</div>
-                        <div class="page404__content-box">
-                            <div class="page404__content-earth" style="background-image: url(images/content/earth.png);"></div>
-                            <div class="page404__content-img" style="background-image: url(images/content/404.png);"></div>
+
+                    <div class="settings__inner">
+                        <div class="settings__buttonbox">
+                            <div class="settings__tab">
+                                <button class="tablinks active" onclick="openTab(event, 'id_1')">Personal Information</button>
+                                <button class="tablinks" onclick="openTab(event, 'id_2')">Profile</button>
+                                <button class="tablinks" onclick="openTab(event, 'id_3')">Badges</button>
+                                <button class="tablinks" onclick="openTab(event, 'id_4')">E-mail Settings</button>
+                                <button class="tablinks" onclick="openTab(event, 'id_5')">Social Network</button>
+                            </div>
+                        </div>    
+
+                        <div class="settings__contentbox">
+
+                            <div id="id_1" class="tabcontent">
+                                
+                                <div class="settings__tab-item">
+                                    <div class="settings__tab-titlebox">
+                                        <div class="settings__tab-titlebox-text">Personal Information</div>
+                                    </div>
+                                    <form>
+                                        <div class="input__caption">First Name</div>
+                                        <input type="text">
+                                        
+                                        <div class="input__caption">Last Name</div>
+                                        <input type="text">
+                                        
+                                        <div class="input__caption">Company Name</div>
+                                        <input type="text">
+
+                                        <div class="input__caption">Country</div>
+                                        <input type="text">
+
+                                        <div class="input__caption">Address Line 1</div>
+                                        <input type="text">
+
+                                        <div class="input__caption">Address Line 2</div>
+                                        <input type="text">
+
+                                        <div class="input__caption">City</div>
+                                        <input type="text">
+
+                                        <div class="input__caption">State / Province / Region</div>
+                                        <input type="text">
+
+                                        <div class="input__caption">Zip / Postal Code</div>
+                                        <input type="text">
+                                        
+                                        <button type="submit">Update</button>
+                                    </form>
+                                </div>
+                            </div>
                             
-                        </div>
-                        <div class="page404__content-sorrytext">Sorry Page Was Not Found</div>
-                        <div class="page404__content-text">The page you are looking is not available or has been removed.
-                            Try going to Home Page by using the button below.</div>
-                        <a class="page404__content-link" href="#">Go To Home Page</a>
+                            <div id="id_2" class="tabcontent">
+                                <div class="settings__tab-item">
+                                    <div class="settings__tab-titlebox">
+                                        <div class="settings__tab-titlebox-text">Profile</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div id="id_3" class="tabcontent">
+                                <div class="settings__tab-titlebox">
+                                    <div class="settings__tab-titlebox-text">Badges</div>
+                                </div>
+                            </div>
+                            
+                            <div id="id_4" class="tabcontent">
+                                <div class="settings__tab-titlebox">
+                                    <div class="settings__tab-titlebox-text">E-mail Settings</div>
+                                </div>
+                            </div>
+                            
+                            <div id="id_5" class="tabcontent">
+                                <div class="settings__tab-titlebox">
+                                    <div class="settings__tab-titlebox-text">Social Network</div>
+                                </div>
+                            </div>
+                        </div>    
+
                     </div>
+
+
                 </div>
             </div>
-
 
         </div>        
 

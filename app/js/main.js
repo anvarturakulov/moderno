@@ -44,7 +44,14 @@ $(function(){
     $('.menu__list').slideToggle();
   });
 
-  
+  // $('product-one__tabs .tab').on('click', function (event){
+  //   var id = $(this).attr('data-id');
+  //   $('.product-one__tabs').find('.tab__item').removeClass('active-tab').hide();
+  //   $('product-one__tabs .tabs').find('.tab').removeClass('active');
+  //   $(this).addClass('active');
+  //   $('#'+id).addClass('active-tab').fadeIn();
+  //   return false;
+  // });
 
 
   var mixer = mixitup('.products__inner-box');
@@ -52,7 +59,7 @@ $(function(){
 });
 
 
-function openCity(evt, cityName) {
+function openTab(evt, Tabid) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -69,6 +76,6 @@ function openCity(evt, cityName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(Tabid).style.display = "block";
   evt.currentTarget.className += " active";
 }
