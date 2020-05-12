@@ -2022,13 +2022,13 @@
 }
 
 
-.settings__tab {
+.settings__tab{
     border: 1px solid #ccc;
     background-color: #fff;
   
 }
 
-.settings__tab button {
+.settings__tab button{
     width: 100%;
     background-color: #fff;
     border: none;
@@ -2044,7 +2044,7 @@
 }
 
 
-.settings__tab button.active {
+.settings__tab button.active{
     color: $bg;
     border-bottom: 2px solid $green;
 }
@@ -2111,5 +2111,193 @@
 
 //setting end
 
+
+// start profile
+.profile__inner{
+    margin-bottom: 110px;
+    display: flex;
+}
+
+.profile__aside{
+    max-width: 270px;
+    width: 100%;
+}
+
+.profile__aside-links{
+    margin-top: 50px;
+}
+
+.mini-link{
+    height: 30px;
+    width: 30px;
+}
+
+.profile__aside-btnbox{
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.profil__aside-btn{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    @include f500;
+    text-align: center;
+    padding: 15px 0px;
+    margin-right: 18px;
+    &+.profil__aside-btn{
+        margin-top: 15px;
+    }
+    
+}
+
+
+.btn__message{
+    &::before{
+        padding-right: 10px;
+        content: '\f003';
+        font-family: 'icomoon';        
+    }
+}
+.profile__tab{
+    border: 1px solid #ccc;
+    background-color: #fff;
+  
+}
+
+.profile__tab button{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #d7d7d7;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0px 20px 0px;
+    transition: 0.3s;
+    font-size: 14px;
+    @include f500;
+    color: #37474f;
+}
+
+.profile__tab button.active {
+    color: $bg;
+    border-bottom: 2px solid $green;
+}
+
+
+
+.profile__content{
+    max-width: 870px;
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.profile__imgbox{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.profile__content-img{
+    min-height: 332px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.profile__inf{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 30px 0px;
+    &-title{
+        @include f500;
+        font-size: 14px;
+        color: $bg;
+    }
+    &-text{
+        font-size: 14px;
+        color: #707070;
+    }
+    &-item{
+        max-width: 218px;
+        width: 100%;
+        padding: 20px 0px;
+        text-align: center;
+        border: 1px solid #dcdcdc;
+        &+.profile__inf-item{
+            border-left: none;
+        }
+    }
+}
+
+
+
+.profile__tabitem{
+    background-color: #fff;
+    padding: 30px 40px 50px;
+    &-title{
+        @include f700;
+        font-size: 20px;
+        color: $bg;
+        padding-bottom: 25px;
+    }
+    &-text{
+        font-size: 15px;
+        color: #707070;
+        margin-top: 3px;
+        width: 100%;
+    }
+}
+
+.profile__skill{
+    
+    &-title{
+        font-size: 16px;
+        @include f500;
+        font-style: italic;
+        color: $bg;
+    }
+    &-box{
+        margin-top: 15px;
+        position: relative;
+        max-width: 778px;
+        height: 15px;
+        background-color: #cbcbcb;
+        border: 1px solid #cbcbcb;
+        border-radius: 5px;
+    }
+    &-fill{
+        height: 13px;
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: repeat-x;
+        border-radius: 1px;
+    }
+    &-persent{
+        z-index: 2;
+        position: absolute;
+        right: 0px;
+        top: -60px;
+        font-size: 16px;
+        @include f700;
+    }
+
+    &-item{
+        &+ .profile__skill-item{
+            margin-top: 15px;
+        }
+    }
+    
+}
+
+
+
+//end profile
 
 @import 'media';
