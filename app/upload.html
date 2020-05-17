@@ -216,7 +216,6 @@
                 </div>
             </header>
 
-
             <section class="search page-search" style="background-image: url(images/search-bg.jpg);">
                 <div class="container">
                     <div class="search__inner">
@@ -240,55 +239,79 @@
                     <div class="breadcrumbs__inner">
                         <ul class="breadcrumbs__list">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Upload Product</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="contact">
+            <section class="upload">
                 <div class="container">
-                    <div class="contact__titlebox">
-                        <div class="contact__titlebox-text">Contact With Us</div>
-                    </div>
-                    <div class="contact__content">
-                        <div class="contact__content-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8942.58899457952!2d66.95458073983545!3d39.657012180891265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d191960077df7%3A0x487636d9d13f2f57!2z0KHQsNC80LDRgNC60LDQvdC0LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1589193052718!5m2!1sru!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                        <div class="contact__box">
-                            <div class="contact__info">
-                                <div class="contact__adress">
-                                    <div class="contact__title icon-location">Our Office Address</div>
-                                    <div class="contact__poloska"></div>
-                                    <div class="contact__text">PO Box 16122 Collins Street West Victoria 8007 Australia</div>
+                    <form>
+                        <div class="upload__inner">
+                            <div class="upload__inner-title">Upload Your item</div>
+                            <div class="upload__inner-content">
+                                <div class="upload__line">
+                                    <label>Select Categories <span>*</span></label>
+                                    <select>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                    </select>
                                 </div>
-                                <div class="contact__phone">
-                                    <div class="contact__title icon-phone">Phone</div>
-                                    <div class="contact__poloska"></div>
-                                    <div class="contact__text">+61 3 8376 6284</div>
+                                <div class="upload__line">
+                                    <label>Product Name <span>*</span></label>
+                                    <input type="text" placeholder="Enter your product name here ..." required>
                                 </div>
-                                <div class="contact__email">
-                                    <div class="contact__title icon-envelope-o">E-mail</div>
-                                    <div class="contact__poloska"></div>
-                                    <div class="contact__text">info@foxtar.com</div>
+                                <div class="upload__line">
+                                    <label>Product Description <span>*</span></label>
+                                    <textarea placeholder="<h1> Type your text  here </h1/>"></textarea>
+                                </div>
+                                <div class="upload__line">
+                                    <label>Upload Main File <span>*</span></label>
+                                    <input type="file" required>
+                                </div>
+                                <div class="upload__line">
+                                    <label>Upload Screenshots <span>*</span></label>
+                                    <input type="file" required>
+                                </div>
+                                <div class="upload__line">
+                                    <label>File Included <span>*</span></label>
+                                    <select name="" id="">
+                                        <option>Select File Type</option>
+                                        <option>Select File Type</option>
+                                        <option>Select File Type</option>
+                                        <option>Select File Type</option>
+                                    </select>
+                                </div>
+                                <div class="upload__line">
+                                    <label>File Dimensions <span>*</span></label>
+                                    <input type="text" placeholder="Enter the item  dimentionss here ..." required>
+                                </div>
+                                <div class="upload__line">
+                                    <label>Item Tags <span>*</span></label>
+                                    <input type="text" placeholder="Enter Tag Here" required>
                                 </div>
                             </div>
-                            <div class="contact__formbox">
-                                <div class="contact__formbox-title">Drop Us A Message</div>
-                                <div class="contact__formbox-form">
-                                    <form>
-                                        <input type="text" placeholder="Name*">
-                                        <input type="text" placeholder="E-mail*">
-                                        <textarea rows="10" cols="45" name="text" placeholder="Message*"></textarea>
-                                        <button type="submit">Send Message</button>
-                                    </form>
+                            <div class="upload__inner-title">Set Your Price (US$)</div>
+                            <div class="upload__inner-content">
+                                <div class="upload__line">
+                                    <label>Regular License  <span>*</span></label>
+                                    <input type="text" placeholder="$00.00" required>
                                 </div>
-
+                                <div class="upload__line">
+                                    <label>Extended License <span>*</span></label>
+                                    <input type="text" placeholder="$00.00" required>
+                                </div>
+                                <button type="submit">Submit</button>    
                             </div>
+                            
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </div>
+            </section>
+
         </div>        
 
         <footer class="footer">

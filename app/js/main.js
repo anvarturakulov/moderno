@@ -11,7 +11,31 @@ $(function(){
       slidesToShow: 4,
       slidesToScroll: 4,
       dots: true,
-      arrows:false
+      arrows:false,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToScroll: 3,
+            
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 630,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
 
     $(".js-range-slider").ionRangeSlider({
@@ -22,6 +46,8 @@ $(function(){
       to: 600,
       prefix: "$"
   });
+
+  $('input[type="file"],select').styler();
 
   $(".icon-th-list").on('click',function(){
     $('.product__item').addClass('list');
